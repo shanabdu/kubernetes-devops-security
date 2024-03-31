@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sun 2024-03-31 18:24:54 UTC; 5min ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 32696 (dockerd)
+      Tasks: 9
+     Memory: 28.2M
+     CGroup: /system.slice/docker.service
+             └─32696 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Mar 31 18:24:53 cks-master dockerd[32696]: time="2024-03-31T18:24:53.421710803Z" level=info msg="Starting up"
+Mar 31 18:24:53 cks-master dockerd[32696]: time="2024-03-31T18:24:53.423904614Z" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Mar 31 18:24:53 cks-master dockerd[32696]: time="2024-03-31T18:24:53.538276578Z" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Mar 31 18:24:53 cks-master dockerd[32696]: time="2024-03-31T18:24:53.689822645Z" level=info msg="Loading containers: start."
+Mar 31 18:24:53 cks-master dockerd[32696]: time="2024-03-31T18:24:53.904131620Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Mar 31 18:24:53 cks-master dockerd[32696]: time="2024-03-31T18:24:53.968179841Z" level=info msg="Loading containers: done."
+Mar 31 18:24:53 cks-master dockerd[32696]: time="2024-03-31T18:24:53.996567569Z" level=info msg="Docker daemon" commit=8b79278 containerd-snapshotter=false storage-driver=overlay2 version=26.0.0
+Mar 31 18:24:53 cks-master dockerd[32696]: time="2024-03-31T18:24:53.996680120Z" level=info msg="Daemon has completed initialization"
+Mar 31 18:24:54 cks-master dockerd[32696]: time="2024-03-31T18:24:54.077676468Z" level=info msg="API listen on /run/docker.sock"
+Mar 31 18:24:54 cks-master systemd[1]: Started Docker Application Container Engine.
